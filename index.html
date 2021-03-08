@@ -26,7 +26,8 @@
                 <div class='text-block'>[our hypothesis]</div>
                 <h2 class='hypo'>K-pop fans’ participation in online collaborative efforts largely 
                     outscales other music industry fan participation, masterfully utilizing social 
-                    media platforms– where information can be easily shared– to organize these projects. </h2>
+                    media platforms– where information can be easily shared– to organize these projects. 
+                </h2>
             </div>
         </div>
 
@@ -46,14 +47,26 @@
             <div class='container container-3'>
                 <h3>#HashtagTakeovers</h3> 
                 <img src='img/1_quote.png'> <br>
-                <p>Sarah Jiminez is one of many ARMYs that utilizes social media to not 
+                <p>Sarah Jiminez is one of many fans that utilizes social media to not 
                     only support their artists, but to collaborate with other fans around 
-                    the world. In the wake of the protests surrounding the George Floyd murder, 
+                    the world. The Korean pop (K-pop) fandom is a super community composed 
+                    of fans of numerous K-pop groups such as BTS, Blackpink, and Girl’s 
+                    Generation. It is estimated that the K-pop stan community has roughly 
+                    100 million people, with BTS ARMY, fans of BTS, the most popular K-pop group, 
+                    making up 50 million alone.
+                </p> <br>
+                <p> In the wake of the protests surrounding the George Floyd murder, 
                     on June 3, 2020, K-pop fans collaborated and overtook white supremacist 
                     hashtag “#WhiteLivesMatter” on Twitter, flooding it with fan recorded 
-                    videos and memes, making it a K-pop trending hashtag.</p> <br>
+                    videos and memes, making it a K-pop trending hashtag.
+                </p> <br>
                 <img src='img/1_wlm.png' class='img-with-text'> <br>
                 <img src='img/1_wlmsample.png' class='img-with-text'> <br>
+                <p>K-pop’s remarkable rise and global impact bring up the questions of: 
+                    how can we effectively quantify and compare collaboration among fan 
+                    groups on different online platforms? What distinguishes K-pop fans’ 
+                    collaborative movements from others?
+                </p>
             </div>
         </div>
 
@@ -88,7 +101,8 @@
                 <p>For a wider scope of fan activity and artist popularity, we explored three different 
                     online platforms: Google Trends, Twitter, and Wikipedia. These data sources give us multiple 
                     facets for collaboration to compare with varying levels of required commitment, 
-                    from easiest (Twitter likes) to hardest (Wikipedia revisions).</p> <br>
+                    from easiest (Twitter likes) to hardest (Wikipedia revisions).
+                </p> <br>
 
                 <img src='img/2_sources.png' class='img-with-text'> <br>
 
@@ -100,7 +114,70 @@
         <div id='methods-analysis' class='category section-5'>
             <div class='container container-5'>
                 <h3>Methods & Analysis</h3>
+
+                <!-- google -->
+                <h5>Google Trends</h5>
                 <p></p>
+                
+                <!-- twitter -->
+                <h5>Twitter</h5>
+                <p>To obtain our Twitter data, we used the Python API twint to scrape tweets without the 
+                    limitations of the official API, which only allows for scraping up to seven days before 
+                    the usage date. We determined “relevant” tweets during the aforementioned time periods 
+                    by scraping Twitter for two hashtags per album: the most popular artist hashtag and the 
+                    most popular album hashtag. For example, for BTS’s first album Dark & Wild, we scraped all 
+                    tweets that contained the “query” hashtags #BTS and #DarkAndWild during the time period. 
+                </p> <br>
+
+                <p>Using twint, we scraped all the original tweets during the specific album release timeframes. 
+                    Here's the summary statistics for our Twitter album data: 
+                </p> <br>
+
+                <img src='img/3_twit1.png' class='img-with-text'> <br>
+
+                <p>By sheer numbers, BTS Twitter fans appear to carry more weight per individual which more than 
+                    compensates for their lower overall size throughout the three albums. By the third album, 
+                    there are about 1.1 total tweets (including replies) per follower for BTS in that time period, 
+                    while Taylor Swift and Justin Bieber average 0.020 and 0.0035 tweets per follower. Though BTS 
+                    has a relatively smaller fanbase size as defined by the number of followers, its members are 
+                    far and beyond more actively engaging on Twitter.
+                </p> <br>
+
+                <p>However, sheer numbers alone do not conclusively indicate collaboration. It is possible that 
+                    the original tweets in our dataset could largely be independent individuals tweeting about 
+                    their favorite artists/albums. As a specialty of fandom Twitter—not counting artist and public 
+                    relations (PR) tweet contributions—there are two main subsets of users: content generators and 
+                    amplifiers. 
+                </p> <br>
+
+                <img src='img/3_twit_users.png' class='img-with-text'><br>
+
+                <p>Naturally, content generators make up a very small portion of total Twitter users, but account 
+                    for the majority of engagement. With the amount of engagement the content they push out receives, 
+                    we consider them a primary driving force behind Twitter collaboration. So, by studying these content 
+                    generators, we are better able to study the mechanisms behind collaboration on Twitter, opposed to 
+                    just looking at raw numbers and assuming collaboration.
+                </p> <br>
+
+                <img src='img/3_twit2.png' class='img-with-text'><br>
+
+                <p>To fairly compare the role and power of content generators across the three artists and 
+                    their albums, we normalized each of the albums to compare how the fanbases changed over 
+                    the years. Since there is no simple way of classifying content generator users, we chose 
+                    to analyze a curve borrowing the concept of the Lorenz Curve to calculate and visualize the 
+                    A percentage of these few users (content generators) that account for B percentage of 
+                    engagement (likes/retweets/replies). Mathematically:
+                </p>
+                
+                <img src='img/3_twit_formula.png'><br>
+                <p>To apply the Lorenz Curve concept, we looked at original tweets, since content generator 
+                    tweets are all original tweets by definition. Visualizing and analyzing curves through 
+                    that range allows us to effectively envision what content generator impact looks like. 
+                </p><br>
+
+                <!-- wikipedia -->
+                <h5>Wikipedia</h5>
+
             </div>
         </div>
 

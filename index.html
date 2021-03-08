@@ -138,10 +138,10 @@
                         searches to the overall volume of site searches for the set period and geography.
                     </p><br>
 
-                    <p>Monthly Google Trends <strong>Arts and Entertainment</strong> search interest since 2004:</p>
+                    <p class='caption'>Monthly Google Trends Arts and Entertainment search interest since 2004:</p>
                     <img src='img/3_goo_popularity_all_cat.png' class='img-with-text'> <br>
 
-                    <p>Monthly Google Trends <strong>General</strong> search interest since 2004:</p>
+                    <p class='caption'>Monthly Google Trends General search interest since 2004:</p>
                     <img src='img/3_goo_popularity_all.png' class='img-with-text'> <br>
 
 
@@ -176,9 +176,10 @@
                     </p> <br>
 
                     <p>Using twint, we scraped all the original tweets during the specific album release timeframes. 
-                        Here's the summary statistics for our Twitter album data: 
                     </p> <br>
 
+
+                    <p class='caption'>Summary Statistics for Twitter album data</p>
                     <img src='img/3_twit1.png' class='img-with-text'> <br>
 
                     <p>By sheer numbers, BTS Twitter fans appear to carry more weight per individual which more than 
@@ -205,6 +206,7 @@
                         just looking at raw numbers and assuming collaboration.
                     </p> <br>
 
+                    <p class='caption'>BTS Be Non-Artist/Non-PR Engagement Distributions</p>
                     <img src='img/3_twit2.png' class='img-with-text'><br>
 
                     <p>To fairly compare the role and power of content generators across the three artists and 
@@ -230,9 +232,9 @@
                         BTS, we scraped "BTS", "Talk: BTS", "Dark & Wild", and "Talk: Dark & Wild" among other 
                         albums.) In addition, we used the MediaWiki API to collect Wikipedia pageviews, which 
                         contain information about how many people viewed a certain Wikipedia page. 
-                        Here are the summary statistics for the revision history and pageviews of all the relevant pages:
                     </p><br>
 
+                    <p class='caption'>Wikipedia Summary Statistics for Relevant Pages</p>
                     <img src='img/3_wiki_summary_stats.png' class='img-with-text'> <br>
 
                     <p>It’s important to note that the time that these Wikipedia articles have been active may 
@@ -290,6 +292,7 @@
                         of time than that of Taylor Swift’s or Justin Bieber’s.
                     </p><br>
 
+                    <p class='caption'>Number of Contributions per Wikipedia Editor</p>
                     <img src='img/3_wiki_edits_per_user.png' class='img-with-text'><br>
 
                     <p>Editors on Wikipedia typically don’t edit many pages. Most editors in an article’s 
@@ -308,7 +311,126 @@
         <div id='results' class='category section-6'>
             <div class='container container-6'>
                 <h3>Results</h3>
-                <p></p>
+                <div class='container'>
+                    <!-- google -->
+                    <h5>Google Trends: BTS becomes increasingly popular.</h5><br>
+                    <p>
+                        For our album-specific trend analysis, we examined both Arts and Entertainment related 
+                        and general trend data to eliminate any possible misclassifications and attempt to 
+                        understand the relative interest in our three musical artists in relation to the 
+                        entertainment industry as well as general topics. Interest is defined daily rather than 
+                        monthly as in our previous historical search.
+                    </p>
+
+                    <p class='caption'>Google Trends Arts and Entertainment (left) and General (right) Search Data for three albums (top to bottom)</p>
+                    <img src='img/4_google_results.png' class='img-with-text'><br>
+
+                    <p>As we progress through the albums, it is evident that <strong>interest in BTS is rising 
+                        while interest in Swift and Bieber has generally decreased</strong> in comparison to their 
+                        earlier releases.
+                    </p><br><br>
+
+                    <!-- twitter -->
+                    <h5>Twitter: BTS leads in Twitter engagement across all albums.</h5>
+                    <p>As previously mentioned, our Twitter analysis primarily focused on identifying 
+                        dedicated content creators responsible for the promotion and encouragement of Twitter 
+                        engagement and subsequent collaboration during album releases. Prior to analyzing engagement 
+                        content, we plotted the number of original (non-retweet) tweets per day during the album 
+                        release periods to visualize the general creation trends. 
+                    </p><br>
+
+                    <p class='caption'>Original tweets per day for each album</p>
+                    <img src='img/4_twit3.png' class='img-with-text'><br>
+
+                    <p>From these plots, we see an expected trend: the number of tweets per day increases 
+                        until peaks around the time of the album release before declining throughout the 
+                        week following. These time-series give us an additional look at the sheer volume of 
+                        tweets BTS fans are pumping out compared to Taylor Swift and Justin Bieber fans.
+                    </p><br>
+
+                    <p>In our content generator engagement analysis, we are looking to see which 
+                        fanbase has the greatest percentage of content generators relative to the total engagement. 
+                        From applying the content generator analysis across the three album releases for each 
+                        artist, we are able to estimate the percentage of the total amount of likes, retweets, 
+                        and replies that were accounted for by them for each of the three albums.
+                    </p><br>
+
+                    <p class='caption'>Plots for 0-5% of Users Accounting for B% Engagement for the First Albums</p>
+                    <img src='img/4_twit4.png' class='img-with-text'><br>
+                    <p>During the time period of the first album, 
+                        BTS had roughly 255k followers compared to the tens of millions that Taylor Swift 
+                        and Justin Bieber had. Despite this, there were still a similar amount of unique tweets 
+                        during the time period as seen in the figure above. BTS largely comes out on top of all 
+                        three artists in these curves, meaning that their content generators were responsible for 
+                        more of their total engagement.
+                    </p><br>
+
+                    <p class='caption'>Plots for 0-5% of Users Accounting for B% Engagement for the Second Albums</p>
+                    <img src='img/4_twit5.png' class='img-with-text'><br>
+                    <p>For the second albums, we see that BTS has begun to pull away, notably leading 
+                        in both likes and retweets. BTS also has far higher Twitter engagement 
+                        specifically for original tweets. From our analysis earlier, we see that there are 
+                        significantly more BTS-related tweets per day, up to double to triple the amount 
+                        for Swift or Bieber. We expect the denominator for our 
+                        content generator percentage calculation to be that much larger since there are 
+                        many more original tweets to be engaged with, but BTS content generators still 
+                        consistently account for a higher 
+                        majority of engagement than the other two artists.
+                    </p>
+
+
+                    <p class='caption'>Plots for 0-5% of Users Accounting for B% Engagement for the Third Albums</p>
+                    <img src='img/4_twit6.png' class='img-with-text'><br>
+                    <p>By the time we reach the third album, we again see that the sheer number original 
+                        tweets per day about BTS has reached an entire order of magnitude higher than 
+                        totals for either Taylor Swift or Justin Bieber. Despite this, BTS content generators 
+                        still outperform the other artists’ content generators across the board for our 
+                        percentage ranges. Through our analyses for these three periods of time, we see 
+                        that the numbers support our hypothesis: <strong>BTS content generators make up more of 
+                        the total engagement and better enable collaboration between members of the fanbase 
+                        on Twitter.</strong>
+                    </p><br><br>
+
+                    <!-- wikipedia -->
+                    <h5>Wikipedia: Interest & collaboration on Taylor Swift related pages are higher than others</h5><br>
+
+                    <p class='caption'>Album Comparisons for Wikipedia Pageviews during Album Release</p>
+                    <img src='img/4_wiki_pageviews.png'><br>
+
+                    <p>We began our comparisons with albums that released after 2015, which is when the MediaWiki 
+                        API began to collect page view data. We see that for our album two comparisons, 
+                        the Taylor Swift and Justin Bieber album pages lead in views each day. There’s a 
+                        general trend where the number of views increases prior to album release, peaks at album release, 
+                        and decreases in the days after. However, Taylor Swift’s page views on her album pages 
+                        have quadrupled that of BTS’s, suggesting that interest in her album, at least on Wikipedia, 
+                        significantly outweighs the interest in BTS’s album and Justin Bieber’s album.
+                    </p><br>
+
+                    <p class='caption'>Album Comparisons for Wikipedia Revisions during Album Release</p>
+                    <img src='img/4_wiki_rev.png' class='img-with-text'><br>
+
+                    <p>The figure above compares the number of revisions for albums released during a similar 
+                        time period for the three artists: BTS, Taylor Swift, and Justin Bieber. Although we 
+                        expected more collaboration on the BTS wikipedia page from our Twitter analysis, the 
+                        results actually show the opposite. Taylor Swift’s album page leads in the number of 
+                        revisions, especially on the day of the album release. Revisions on Justin Bieber’s album 
+                        page show a similar pattern, peaking on the day of his album release and slowly decreases 
+                        as time goes on. This trend doesn’t appear with BTS’s album page as the number of revisions 
+                        stays low throughout the 12 day interval.
+                    </p><br>
+
+                    <p class='caption'>Album Comparisons for Wikipedia Revision Length during Album Release</p>
+                    <img src='img/4_wiki_revlength.png' class='img-with-text'><br>
+
+                    <p>In addition, we also explored how the revision length changed over time for these album 
+                        pages. The same upward slope is seen in all album pages (except for Taylor Swift's Folklore), 
+                        suggesting a slow but steady effort in collaboration among Wikipedia editors. The article 
+                        for Taylor Swift’s Folklore has a much steeper upward slope in 
+                        revision length, suggesting that editors in Taylor Swift’s Folklore page were contributing 
+                        more content with each revision.
+                    </p>
+
+                </div>
             </div>
         </div>
 
@@ -316,7 +438,9 @@
         <div id='conclusions' class='category section-7'>
             <div class='container container-7'>
                 <h3>Conclusions</h3>
-                <p></p>
+                <div class='container'>
+
+                </div>
             </div>
         </div>
 

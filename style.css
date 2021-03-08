@@ -1,6 +1,6 @@
 body {
     font-family:Poppins, sans-serif;
-    color: #000;
+    color: #222;
     font-size:16px;
     line-height: 20px;
 }
@@ -36,7 +36,7 @@ h4{
     font-size: 26px;
     line-height: 1.4;
     font-weight: 600;
-    color: #fff;
+    color: rgb(241, 241, 241);
 }
 
 h5{
@@ -59,13 +59,19 @@ h6{
 p{
     margin-bottom: 16px;
     font-size: 16px;
-    color: #000;
+    color: #333;
     line-height: 1.6;
     font-weight: 400;
 }
 
+.caption{
+    text-align:center;
+    font-size: 14px;
+    font-weight:700;
+}
+
 .dark{
-    color: #fff;
+    color: rgb(231, 231, 231);
 }
 
 .text-block{
@@ -74,11 +80,11 @@ p{
 }
 
 .hypo{
-    color: #fff;
+    color: rgb(231, 231, 231);
 }
 
 a{
-    color: #000;
+    color: #333;
     text-decoration: underline;
 }
 
@@ -147,5 +153,9 @@ img{
 }
 
 .img-with-text{
-    width: 80%;
+    width: 100%;
+}
+
+.grid{
+    width: 100%;
 }

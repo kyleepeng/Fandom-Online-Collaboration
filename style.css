@@ -60,7 +60,7 @@ p{
     font-size: 16px;
     color: #000;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .dark{
@@ -91,7 +91,7 @@ a{
     margin-top:0px;
     padding-top:22px;
     padding-bottom:420px;
-    background-image:url('bg.png');
+    background-image:url('img/bg.png');
     background-position: 0px 0px;
     background-size:auto;
     background-clip: border-box;
@@ -99,10 +99,6 @@ a{
 
 .container-1{
     margin-top: 80px;
-}
-
-.container-2{
-    margin-bottom: 80px;
 }
 
 .section-2{
@@ -140,4 +136,15 @@ nav a:hover{
 .category{
     padding-top:80px;
     padding-bottom:20px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img-with-text{
+    width: 80%;
 }

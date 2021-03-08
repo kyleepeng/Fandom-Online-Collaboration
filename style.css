@@ -153,9 +153,9 @@ img{
 }
 
 .img-with-text{
-    width: 100%;
+    width: 80%;
 }
 
-.grid{
-    width: 100%;
+span{
+    color:#B388DB;
 }
